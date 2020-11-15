@@ -1,0 +1,230 @@
+@font-face {
+    font-family: MyFont;
+    src: url('../fonts/AirbnbCerealBold.woff');
+}
+
+@font-face {
+    font-family: MyFontLight;
+    src: url('../fonts/AirbnbCerealLight.woff');
+}
+
+@font-face {
+    font-family: MyFontMedium;
+    src: url('../fonts/AirbnbCerealMedium.woff');
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    opacity: 0;
+    animation: 1s showPicture both;
+    border-radius: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none!important;
+}
+
+a:hover {
+    color: none!important;
+}
+
+@keyframes showPicture {
+    100% {
+        opacity: 1;
+    }
+}
+
+#profile {
+    opacity: 0;
+    animation: 1s showProfile both;
+}
+
+@keyframes showProfile {
+    100% {
+        opacity: 1;
+    }
+}
+
+#repos {
+    opacity: 0;
+    animation: 1s showRepos both;
+}
+
+@keyframes showRepos {
+    100% {
+        opacity: 1;
+    }
+}
+
+#lastSearch {
+    opacity: 0;
+    animation: 0.1s showLastSearch both;
+}
+
+@keyframes showLastSearch {
+    100% {
+        opacity: 1;
+    }
+}
+
+.search {
+    opacity: 0;
+    animation: 1s searchBody both;
+}
+
+@keyframes searchBody {
+    100% {
+        opacity: 1;
+    }
+}
+
+.borderzero {
+    border: 0 none;
+}
+
+.container {
+    margin-top: 5rem;
+    font-family: MyFont;
+}
+
+.dark-mode {
+    background-color: #0F0F0F;
+}
+
+.page-heading {
+    color: orange;
+}
+
+.search>h3 {
+    color: orange;
+}
+
+.form-control {
+    max-width: 500px;
+}
+
+.links-wrapper {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #2fa0f6;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    transition: background 0.3s ease-out, color 0.3s ease-out, border 0.3s ease-out;
+}
+
+.link svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    margin-top: 0.1rem;
+}
+
+.sub-heading2 {
+    text-align: center;
+    padding: 50px;
+    background-color: blanchedalmond;
+    border-radius: .25rem;
+}
+
+#userName {
+    font-size: 28px;
+}
+
+#fullName {
+    font-size: 16px;
+}
+
+#bio {
+    font-weight: 400;
+    font-family: MyFontLight;
+    margin-top: 10px;
+    margin-bottom: 19px;
+}
+
+.profileBody {
+    margin-left: 0;
+}
+
+.userInfo button+button {
+    margin-left: 0;
+}
+
+.list-group-item {
+    padding: .75rem 0;
+    margin-top: -10px;
+    background-color: #f6f6f6;
+}
+
+.badge {
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 2500px) {
+    .profileBody {
+        margin-left: 5em;
+    }
+    .userInfo>button {
+        margin-left: 0px;
+    }
+    .userInfo button+button {
+        margin-left: 18px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .profileBody {
+        margin-left: 0px;
+    }
+    .userInfo>button {
+        margin-left: 0px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .userInfo button+button {
+        margin-left: 0px;
+    }
+}
+
+.borderzero>img {
+    width: 25px;
+}
+
+.borderzero>span {
+    margin-left: 10px;
+    font-family: myFontLight;
+}
+
+.card {
+    border: 0px solid rgba(0,0,0,.125);
+    box-shadow: 0px 0px 20px 0px #e3e3e3, -11px -11px 66px #ffffff;
+    border-radius: 0.55rem;
+    background-color: #f6f6f6;
+}
+
+.card-body .row .col-md-4 a > img {
+    margin-top: 7px;
+}
