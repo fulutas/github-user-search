@@ -1,4 +1,4 @@
 # github-user-search
 
-# Github kullanıcılarını arayın.
-Herkese açık github api ile yapıldı.
+Search for Github users.
+Made with the public github api.
